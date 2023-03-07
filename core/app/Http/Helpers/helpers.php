@@ -50,15 +50,15 @@ function getNumber($length = 8)
     return $randomString;
 }
 
-function activeTemplate($asset = false)
-{
-    $template = activeTemplateName();
-    if ($asset) {
-        return 'assets/templates/' . $template . '/';
-    }
+// function activeTemplate($asset = false)
+// {
+//     $template = activeTemplateName();
+//     if ($asset) {
+//         return 'assets/templates/' . $template . '/';
+//     }
 
-    return 'templates.' . $template . '.';
-}
+//     return 'templates.' . $template . '.';
+// }
 
 // function activeTemplateName()
 // {
