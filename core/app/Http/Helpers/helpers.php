@@ -203,12 +203,12 @@ function getImage($image, $size = null)
 
 function notify($user, $templateName, $shortCodes = null, $sendVia = null, $createLog = true,$redirectUrl = null)
 {
-    $general          = gs();
-    $globalShortCodes = [
-        'site_name'       => $general->site_name,
-        'site_currency'   => $general->cur_text,
-        'currency_symbol' => $general->cur_sym,
-    ];
+    // $general          = gs();
+    // $globalShortCodes = [
+    //     'site_name'       => $general->site_name,
+    //     'site_currency'   => $general->cur_text,
+    //     'currency_symbol' => $general->cur_sym,
+    // ];
 
     if (gettype($user) == 'array') {
         $user = (object) $user;
