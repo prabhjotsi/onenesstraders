@@ -62,7 +62,7 @@ function activeTemplate($asset = false)
 
 function activeTemplateName()
 {
-    $general         = gs();
+    // $general         = gs();
     $template        = $general->active_template;
     $sessionTemplate = session()->get('template');
     if (trim($sessionTemplate)) {
