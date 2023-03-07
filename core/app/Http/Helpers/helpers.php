@@ -60,16 +60,16 @@ function activeTemplate($asset = false)
     return 'templates.' . $template . '.';
 }
 
-function activeTemplateName()
-{
-    // $general         = gs();
-    $template        = $general->active_template;
-    $sessionTemplate = session()->get('template');
-    if (trim($sessionTemplate)) {
-        $template = $sessionTemplate;
-    }
-    return $template;
-}
+// function activeTemplateName()
+// {
+//     $general         = gs();
+//     $template        = $general->active_template;
+//     $sessionTemplate = session()->get('template');
+//     if (trim($sessionTemplate)) {
+//         $template = $sessionTemplate;
+//     }
+//     return $template;
+// }
 
 function loadReCaptcha()
 {
