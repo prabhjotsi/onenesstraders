@@ -28,16 +28,16 @@ function slug($string)
     return Illuminate\Support\Str::slug($string);
 }
 
-function verificationCode($length)
-{
-    if ($length == 0) {
-        return 0;
-    }
+// function verificationCode($length)
+// {
+//     if ($length == 0) {
+//         return 0;
+//     }
 
-    $min = pow(10, $length - 1);
-    $max = (int) ($min - 1) . '9';
-    return random_int($min, $max);
-}
+//     $min = pow(10, $length - 1);
+//     $max = (int) ($min - 1) . '9';
+//     return random_int($min, $max);
+// }
 
 function getNumber($length = 8)
 {
