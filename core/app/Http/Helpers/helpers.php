@@ -462,15 +462,15 @@ function diffDatePercent($start, $end)
     return round($percentage * 100, 2);
 }
 
-function gs()
-{
-    $general = Cache::get('GeneralSetting');
-    if (!$general) {
-        $general = GeneralSetting::first();
-        Cache::put('GeneralSetting', $general);
-    }
-    return $general;
-}
+// function gs()
+// {
+//     $general = Cache::get('GeneralSetting');
+//     if (!$general) {
+//         $general = GeneralSetting::first();
+//         Cache::put('GeneralSetting', $general);
+//     }
+//     return $general;
+// }
 
 function getInitials($name)
 {
